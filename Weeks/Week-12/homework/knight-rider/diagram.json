@@ -61,6 +61,13 @@
       "left": 37.55,
       "rotate": 270,
       "attrs": { "value": "200" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": 100,
+      "left": 100,
+      "attrs": { "color": "green" }
     }
   ],
   "connections": [
@@ -77,7 +84,9 @@
     [ "led3:C", "esp:GND.3", "black", [ "v0" ] ],
     [ "r4:2", "led4:A", "gold", [ "h0" ] ],
     [ "esp:4", "r4:1", "gold", [ "h0" ] ],
-    [ "led4:C", "esp:GND.3", "black", [ "v0" ] ]
+    [ "led4:C", "esp:GND.3", "black", [ "v0" ] ],
+    [ "esp:18", "btn1:1.l", "purple", [ "h0" ] ],
+    [ "btn1:2.l", "esp:GND.1", "black", [ "h0" ] ]
   ],
   "dependencies": {}
 }
